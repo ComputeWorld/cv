@@ -20,7 +20,7 @@ chatbot = ChatBot('Translator')
 
 while True:
     user_input = input('You: ')
-    translated_input = translate(user_input, 'en', 'fr') # translate from English to French
+    translated_input = translate(user_input, 'en', 'hi') # translate from English to Hindi
     translated_response = chatbot.get_response(translated_input)
-    response = translate(str(translated_response), 'fr', 'en') # translate back to English
+    response = translate(str(translated_response), 'hi', 'en') # translate back to English
     print('Chatbot:', response)
